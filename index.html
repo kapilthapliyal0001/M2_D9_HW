@@ -27,6 +27,25 @@
             text-align: center;
             padding-left: 5px;
         }
+
+        .jumbotron {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .first-nav {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .second-nav {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            margin-right: 20px;
+        }
     </style>
 </head>
 <body style="background-color: white;">
@@ -62,9 +81,17 @@
         </div>
       </nav>
 
-      
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome to my Play-list</h1>
+        <p class="lead">Below you can find my favourite and the worst liked music albums</p>
+        <hr class="my-4">
+        <p>Click over each icon to listen the music in <strong> Youtube</strong></p>
+        <p class="lead">
+          <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+        </p>
+      </div>
 
-    <nav style="margin-left: 20px;" class="navbar navbar-light bg-light">
+    <nav style="margin-left: 20px;" class="navbar navbar-light bg-light first-nav">
         <a class="navbar-brand" href="#">
           <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F750037840%2F960x0.jpg%3Ffit%3Dscale" width="30" height="30" class="d-inline-block align-top" alt="">
           Top-Favorites 
@@ -72,14 +99,45 @@
       </nav>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <img class="fav_img" src="https://i1.sndcdn.com/artworks-000258009272-fqlmm6-t500x500.jpg" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <img class = "fav_img" src="https://accordichitarra.me/wp-content/uploads/2019/10/attention-charlie-puth-1.jpg" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <img class="fav_img" src="https://images-na.ssl-images-amazon.com/images/I/61CDjPeGhhL._AC_SY355_.jpg" alt="Ed-Sheeran"></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <img class="fav_img" src="https://xttrawave.com/wp-content/uploads/2018/12/xxxtentaction-question-mark-album-artwork.jpg" alt=""></div>
+
+            <!-- Bootstrap cards -->
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://i1.sndcdn.com/artworks-000258009272-fqlmm6-t500x500.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://accordichitarra.me/wp-content/uploads/2019/10/attention-charlie-puth-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/61CDjPeGhhL._AC_SY355_.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://xttrawave.com/wp-content/uploads/2018/12/xxxtentaction-question-mark-album-artwork.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+            <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <img class="fav_img" src="" alt=""></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <img class = "fav_img" src="" alt=""></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <img class="fav_img" src="" alt="Ed-Sheeran"></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <img class="fav_img" src="" alt=""></div> -->
 
         </div>
         </div>
-<nav style="margin-left: 20px;" class="navbar navbar-light bg-light">
+<nav style="margin-left: 20px;" class="navbar navbar-light bg-light second-nav">
 <a class="navbar-brand" href="#">
     <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F750037840%2F960x0.jpg%3Ffit%3Dscale" width="30" height="30" class="d-inline-block align-top" alt="">
     Worst liked
@@ -88,10 +146,40 @@
 
 <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3"><a href="https://youtu.be/09R8_2nJtjg"></a><img class="fav_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGNhMZuuc6XDDtK-rdmNH1O2FllA6sv_8GHA&usqp=CAU" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <a href="https://youtu.be/nfs8NYg7yQM"></a><img class="fav_img"  src="https://i.insider.com/5b6df48e8ea82f1d008b51a6?width=1000&format=jpeg&auto=webp" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3"><a href="https://youtu.be/OjGrcJ4lZCc"></a> <img class="fav_img"  src="https://assets.vogue.com/photos/5891a3734fe15261130239b8/master/w_1600%2Cc_limit/01-usher-confessions.jpg" alt=""></div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3"><a href="https://youtu.be/J-dv_DcDD_A"></a> <img class="fav_img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAarRxZ7Agj0z3husqoCZ0QSpE9hbvn2ilzw&usqp=CAU" alt=""></div>
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://i.insider.com/5b6df48e8ea82f1d008b51a6?width=1000&format=jpeg&auto=webp" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://xttrawave.com/wp-content/uploads/2018/12/xxxtentaction-question-mark-album-artwork.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://assets.vogue.com/photos/5891a3734fe15261130239b8/master/w_1600%2Cc_limit/01-usher-confessions.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+              <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAarRxZ7Agj0z3husqoCZ0QSpE9hbvn2ilzw&usqp=CAU" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+
+            <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3"><a href="https://youtu.be/09R8_2nJtjg"></a><img class="fav_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGNhMZuuc6XDDtK-rdmNH1O2FllA6sv_8GHA&usqp=CAU" alt=""></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <a href="https://youtu.be/nfs8NYg7yQM"></a><img class="fav_img"  src="" alt=""></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3"><a href="https://youtu.be/OjGrcJ4lZCc"></a> <img class="fav_img"  src="" alt=""></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3"><a href="https://youtu.be/J-dv_DcDD_A"></a> <img class="fav_img"  src="" alt=""></div> -->
 
     </div>
     </div>
